@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elli.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Grade Converter to Point</h1>
+
+    <form id="gradeForm">
+        
+        <label for="lastname">Lastname*</label>
+        <input type="text" id="lastname" required>
+
+        <label for="firstname">Firstname*</label>
+        <input type="text" id="firstname" required>
+
+        <label for="middlename">Middlename*</label>
+        <input type="text" id="middlename" required>
+
+        <label for="cys">Course, Yr & Section</label>
+        <select id="cys">
+            <option value="">Select</option>
+            <option value="BSCS 1A">BSCS 1A</option>
+            <option value="BSCS 1B">BSCS 1B</option>
+            <option value="BSIT 1A">BSIT 1A</option>
+            <option value="BSIT 1B">BSIT 1B</option>
+            <option value="ACT-AD 1A">ACT-AD 1A</option>
+            <option value="ACT-AD 1B">ACT-AD 1B</option>
+            <option value="ACT-NT 1A">ACT-NT 1A</option>
+            <option value="ACT-NT 1B">ACT-NT 1B</option>
+        </select>
+
+        <label for="grade">Grade</label>
+        <input type="number" id="grade" step="0.01" required>
+
+        <button type="submit">Compute Grade</button>
+    </form>
+
+    <div class="grade" id="result"></div>
+</div>
+
+</body>
+</html>
